@@ -7,6 +7,8 @@ public class Paddle : MonoBehaviour {
 	
 	private bool hasStarted = false;
 	private Ball ball;
+	private float paddleMinX = 1f;
+	private float paddleMaxX = 15f;
 	
 	// Use this for initialization
 	void Start () {
@@ -31,7 +33,7 @@ public class Paddle : MonoBehaviour {
 		//float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
 		
 		//paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0.5f, 15.5f);
-		paddlePos.x = Mathf.Clamp(ballPos.x, 0.5f, 15.5f);
+		paddlePos.x = Mathf.Clamp(ballPos.x, paddleMinX, paddleMaxX);
 		this.transform.position = paddlePos;
 	}
 	
@@ -40,7 +42,7 @@ public class Paddle : MonoBehaviour {
 		
 		float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
 		
-		paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0.5f, 15.5f);
+		paddlePos.x = Mathf.Clamp(mousePosInBlocks, paddleMinX, paddleMaxX);
 		
 		this.transform.position = paddlePos;
 	}
