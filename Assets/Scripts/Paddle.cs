@@ -15,6 +15,9 @@ public class Paddle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetMouseButtonDown(0)){
+			hasStarted = true;
+		}
 		if(!autoPlay){
 			MoveWithMouse();
 		} else {
@@ -40,10 +43,6 @@ public class Paddle : MonoBehaviour {
 		paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0.5f, 15.5f);
 		
 		this.transform.position = paddlePos;
-		
-		if(Input.GetMouseButtonDown(0)){
-			hasStarted = true;
-		}
 	}
 	
 	void OnCollisionEnter2D (Collision2D collision){
