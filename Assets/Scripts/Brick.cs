@@ -22,7 +22,6 @@ public class Brick : MonoBehaviour {
 		if (isBreakable){
 			breakableCount++;
 		}
-		print(breakableCount);
 		timesHit = 0;
 		levelManager = GameObject.FindObjectOfType<LevelManager>();
 	}
@@ -63,7 +62,7 @@ public class Brick : MonoBehaviour {
 			smokePuff.particleSystem.startColor = green;
 		else if (maxHits == 1)
 			smokePuff.particleSystem.startColor = yellow;
-		Destroy(smokePuff, smokePuff.particleSystem.duration); 
+		Destroy(smokePuff, smokePuff.particleSystem.duration + 2f); 
 	}
 	
 	void LoadSprites(){
