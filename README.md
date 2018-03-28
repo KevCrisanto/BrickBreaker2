@@ -32,3 +32,5 @@ Things that I will implement in the future:
 
 ### How can I play it?
 You don't have to download the game, you can play it online [here](http://kevincrisanto.com/portfolio/brickbreaker2.html).
+
+If you still want to download it, you can download the .zip file [here](https://github.com/KevCrisanto/BrickBreaker2/releases/).
