@@ -9,7 +9,7 @@ Use the paddle in order to keep the ball in the game & hit the bricks. Your miss
 
 - Sound: Uninterrumpted background music and sounds when bricks, paddle, and walls are hit.
 
-- Different kinds of bricks: Some bricks need to be hitted more than once. The user can see the damage after every hit.
+- Different kinds of bricks: Some bricks need to be hit more than once. The user can see the damage after every hit.
 
 - Effects: Added effects when a brick is destroyed.
 
